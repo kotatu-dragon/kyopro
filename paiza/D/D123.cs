@@ -26,7 +26,7 @@ class Program
     static void Main(string[] args)
     {
         int x = sc.Int;
-        Prt(x < 10000 ? x : x + 10000);
+        Prt(x > 10000 ? x : x + 10000);
         sw.Flush();
     }
 

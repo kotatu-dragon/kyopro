@@ -25,8 +25,9 @@ class Program
     const double eps = 1e-11;
     static void Main(string[] args)
     {
-        int x = sc.Int;
-        Prt(x < 10000 ? x : x + 10000);
+        int n = sc.Int;
+        int h = sc.Int;
+        Prt(n * h);
         sw.Flush();
     }
 
