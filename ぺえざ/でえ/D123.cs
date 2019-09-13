@@ -25,9 +25,16 @@ class Program
     const double eps = 1e-11;
     static void Main(string[] args)
     {
-        int x = sc.Int;
-        Prt(x > 10000 ? x : x + 10000);
-        sw.Flush();
+        int n;
+        string x;
+        sc.Multi(out n, out x);
+        string ans;
+        for (int i = 0; i < n; i++)
+        {
+            int keta = sc.Int;
+            ans = x.Substring(keta, 1);
+            Prt(ans);
+        }
     }
 
     static void DBG(string a) => Console.WriteLine(a);
